@@ -64,10 +64,15 @@ const Hero = () => {
         />
       </div>
       <div className="all-icons flex under-animation">
-        <div className="icon icon-twitter"></div>
-        <div className="icon icon-instagram"></div>
-        <div className="icon icon-github"></div>
-        <div className="icon icon-linkedin"></div>
+        <a
+          href="https://www.instagram.com/makarryyy/?__pwa=1"
+          className="icon icon-instagram"
+        />
+        <a href="https://github.com/makarydev19" className="icon icon-github" />
+        <a
+          href="https://www.linkedin.com/in/makary-yasser-8893b0317/"
+          className="icon icon-linkedin"
+        />
       </div>
     </section>
   );
