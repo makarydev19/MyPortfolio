@@ -94,8 +94,8 @@ const Main = () => {
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">
-                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                    tempore dolor in, accusantium laudantium accusamus.
+                    {/* Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+                    tempore dolor in, accusantium laudantium accusamus. */}
                   </p>
 
                   <a className="flex icons" href={item.link}>
