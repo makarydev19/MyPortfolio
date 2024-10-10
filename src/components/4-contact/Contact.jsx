@@ -1,9 +1,9 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
-import Lottie from "lottie-react";
-import doneAnimation from "../../animation/done.json";
-import contactAnimation from "../../animation/contact.json";
-import "./contact.css";
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import Lottie from 'lottie-react';
+import doneAnimation from '../../animation/done.json';
+import contactAnimation from '../../animation/contact.json';
+import './contact.css';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,7 +27,7 @@ const Contact = () => {
         },
         (error) => {
           setIsSubmitting(false);
-          console.error("Failed to send message: ", error.text);
+          console.error('Failed to send message: ', error.text);
         }
       );
   };
@@ -38,31 +38,28 @@ const Contact = () => {
         <span className="icon-envelope"> </span>
         Contact us
       </h1>
-      <p className="sub-title">
-        Contact us for more information and Get notified when I publish
-        something new.
-      </p>
+      <p className="sub-title">Contact us for more information.</p>
 
-      <div style={{ justifyContent: "space-between" }} className="flex">
+      <div style={{ justifyContent: 'space-between' }} className="flex">
         <form onSubmit={handleSubmit} className="">
           <div className="flex">
             <label htmlFor="email">Email Address:</label>
             <input required type="email" name="email" id="email" />
           </div>
 
-          <div className="flex" style={{ marginTop: "24px" }}>
+          <div className="flex" style={{ marginTop: '24px' }}>
             <label htmlFor="message">Your message:</label>
             <textarea required name="message" id="message"></textarea>
           </div>
 
           <button type="submit" disabled={isSubmitting} className="submit">
-            {isSubmitting ? "Submitting ..." : "Submit"}
+            {isSubmitting ? 'Submitting ...' : 'Submit'}
           </button>
 
           {isSuccess && (
             <p
               className="flex"
-              style={{ fontSize: "18px", marginTop: "1.7rem" }}
+              style={{ fontSize: '18px', marginTop: '1.7rem' }}
             >
               <Lottie
                 loop={false}
