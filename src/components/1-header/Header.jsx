@@ -34,7 +34,7 @@ const Header = () => {
           className="logo"
         />
       ) : (
-        <img src="/public/myLogo.png" alt="" className="logo" />
+        <img src="./myLogo.png" alt="" className="logo" />
       )}
 
       <nav>
