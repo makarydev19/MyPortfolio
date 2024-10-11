@@ -1,4 +1,4 @@
-import "./footer.css";
+import './footer.css';
 const Footer = () => {
   return (
     <footer className="flex">
@@ -15,7 +15,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <p>© 2024 Dev Makary. All rights reserved.</p>
+      <p>© 2024 MakEnd. All rights reserved.</p>
     </footer>
   );
 };
