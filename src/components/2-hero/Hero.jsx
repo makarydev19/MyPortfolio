@@ -23,9 +23,7 @@ const Hero = () => {
           <div className="icon-verified"></div>
         </div>
         <BlurFade delay={0.25} inView>
-          <h1 className="title">
-            Software designer, Frontend Developer, and Content Creator.
-          </h1>
+          <h1 className="title">Software designer and Frontend Developer.</h1>
         </BlurFade>
         <BlurFade delay={0.25 * 2} inView>
           <p className="sub-title">

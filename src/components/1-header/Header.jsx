@@ -76,12 +76,21 @@ const Header = () => {
         <div className="fixed">
           <ul className="modal ">
             <li>
-              <button
-                className="icon-close"
-                onClick={() => {
-                  setshowModal(false);
-                }}
-              />
+              {theme === 'dark' ? (
+                <button
+                  className="icon-close"
+                  onClick={() => {
+                    setshowModal(false);
+                  }}
+                />
+              ) : (
+                <button
+                  className="icon-close close-black"
+                  onClick={() => {
+                    setshowModal(false);
+                  }}
+                />
+              )}
             </li>
             <li>
               <a href="#about">About</a>
